@@ -1,11 +1,12 @@
 body {
     background-color: #2d2d2d;
     font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden; 
 }
 
 h1 {
     font-size: 25px;
-    width: 75%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     color: rgb(220, 241, 129);
@@ -13,7 +14,7 @@ h1 {
 
 h3 {
     font-size: 22px;
-    width: 70%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     color: rgb(220, 241, 129);
@@ -22,7 +23,7 @@ h3 {
 
 h4 {
     font-size: 19px;
-    width: 70%;
+    width:65%;
     margin-left: auto;
     margin-right: auto;
     color: rgb(125, 190, 243);
@@ -48,4 +49,33 @@ p {
 
 .variable {
     color: rgb(125, 190, 243);
+}
+
+img {
+    position: absolute;
+    width: 300px;
+    left: 10px;
+    top: 285px;
+    padding: 10px;
+    z-index: 0; 
+}
+
+#left {
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    width: 170px;
+    height: 600px;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+}
+
+#right {
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    width: 180px;
+    height: 600px;
+    top: 0px;
+    right: 0;
+    z-index: 1;
 }
