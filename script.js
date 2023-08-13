@@ -13,9 +13,9 @@ function moveImage() {
 
 setInterval(moveImage, 15);
 
- $('#planner').click(function() {
-        var linkUrl = 'https://github.com/DiaZia/Workout-planner-app';
-        window.open(linkUrl, '_blank');
+$('#planner').click(function() {
+    var linkUrl = 'https://github.com/DiaZia/Workout-planner-app';
+    window.open(linkUrl, '_blank');
 });
 
 $('#game').click(function() {
@@ -37,4 +37,15 @@ $('#linkedin').click(function() {
 $('#github').click(function() {
     var linkUrl = 'https://github.com/DiaZia/portfolio';
     window.open(linkUrl, '_blank');
+});
+
+$('#cv').click(function() {
+    const downloadLink = $('<a></a>');
+
+    downloadLink.attr('href', '/files/cv.docx'); 
+    downloadLink.attr('download', 'cv.docx'); 
+    
+    $('body').append(downloadLink);
+    downloadLink[0].click();
+    downloadLink.remove(); 
 });
