@@ -8,10 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>About me</title>
 </head>
 <body>
-    <h1><span class="var">var</span> <span class="variable">headline =</span> " About me " ;</h1>    
+    <div id="head">
+        <p id="aboutMe">AboutMe.page        <strong>×</strong></p>
+        <p id="others"> </p>
+    </div>
     <h3><span class="var">var</span> <span class="variable">introduction =</span>  " Hi, I'm Diana! " ;</h3>
     <h4>{</h4>
     <p><span class="var">var</span> <span class="variable">paragraph =</span> " I'm student of the  <strong>Faculty of Management Science and Informatics</strong> at the University of Žilina.
@@ -22,6 +26,19 @@
     <h4>}</h4>
     <p id="left"></p>
     <p id="right"></p>
+    <p id="lines"><br>  1<br>  2<br>  3<br>  4<br>  5<br>  6<br>  7<br>  8<br>  9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25</p>
+    <div id="projects">
+        <h5>My projects</h5>
+        <button class="button" id="planner">Workout planner (Kotlin app)</button>
+        <button class="button" id="game">Ballon typing game (C# WPF app)</button>
+        <button class="button" id="calculator">Calculator (web app)</button>
+    </div>
+    <div id="myLinks">
+        <h6 id="links">Where you can find me</h6>
+        <img id="linkedin" src="/images/linkedin_logo.png" alt="linkedin">
+        <img id="github" src="/images/github-logo.png" alt="github">
+    </div>
+    
     <img id="image" src="/images/coding_joke.png" alt="Joke">
     <script src="script.js"></script>
 </body>
