@@ -1,17 +1,37 @@
-const image = document.getElementById('image');
-let xPosition = 100; 
+const image1 = document.getElementById('image1');
+const image2 = document.getElementById('image2');
+const image3 = document.getElementById('image3');
+const image4 = document.getElementById('image4');
+const image5 = document.getElementById('image5');
+const image6 = document.getElementById('image6');
+const image7 = document.getElementById('image7');
+const image8 = document.getElementById('image8');
+const image9 = document.getElementById('image9');
+const image10 = document.getElementById('image10');
+let xPositions = [1600, 1400, 1200, 1000, 800, 600, 400, 200, 0, -200];
 
-function moveImage() {
-    if (xPosition < window.innerWidth - 180) {
-        xPosition += 1; 
-    } else {
-        xPosition = -100;
+function moveImages() {
+    for (var i = 0; i < xPositions.length; i++) {
+        if (xPositions[i] < 1800) {
+            xPositions[i] += 1; 
+        } else {
+            xPositions[i] = -200;
+        }
     }
 
-    image.style.left = xPosition + 'px';
+    image1.style.left = xPositions[0] + 'px';
+    image2.style.left = xPositions[1] + 'px';
+    image3.style.left = xPositions[2] + 'px';
+    image4.style.left = xPositions[3] + 'px';
+    image5.style.left = xPositions[4] + 'px';
+    image6.style.left = xPositions[5] + 'px';
+    image7.style.left = xPositions[6] + 'px';
+    image8.style.left = xPositions[7] + 'px';
+    image9.style.left = xPositions[8] + 'px';
+    image10.style.left = xPositions[9] + 'px';
 }
 
-setInterval(moveImage, 15);
+setInterval(moveImages, 10);
 
 $('#planner').click(function() {
     var linkUrl = 'https://github.com/DiaZia/Workout-planner-app';

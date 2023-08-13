@@ -67,11 +67,12 @@ p {
     color: rgb(125, 190, 243);
 }
 
-img {
+.image {
     position: absolute;
-    width: 300px;
+    width: 200px;
+    height: 400px;
     left: 10px;
-    top: 685px;
+    top: 590px;
     padding: 10px;
     z-index: 0; 
 }
@@ -171,4 +172,15 @@ h5 {
     border-radius: 8px;
     border: 1px solid rgb(24, 24, 24);
     background-color: #96c4e1;
+}
+
+#life {
+    color: rgb(205, 220, 255);
+    font-size: 16px;
+    width: 100px;
+    margin-top: 96px;
+    border: 1px solid black;
+    padding: 3px 31% 3px 33%;
+    margin-left: 13%;
+    margin-right: 14%;
 }
