@@ -39,8 +39,14 @@ $('#planner').click(function() {
 });
 
 $('#game').click(function() {
-    var linkUrl = 'https://github.com/DiaZia/Balloons-typing-game';
-    window.open(linkUrl, '_blank');
+    const downloadLink = $('<a></a>');
+
+    downloadLink.attr('href', '/files/balloonTypingGame.zip'); 
+    downloadLink.attr('download', 'balloonTypingGame.zip'); 
+    
+    $('body').append(downloadLink);
+    downloadLink[0].click();
+    downloadLink.remove(); 
 });
 
 $('#calculator').click(function() {
