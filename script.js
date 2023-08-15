@@ -8,30 +8,48 @@ const image7 = document.getElementById('image7');
 const image8 = document.getElementById('image8');
 const image9 = document.getElementById('image9');
 const image10 = document.getElementById('image10');
-let xPositions = [1600, 1400, 1200, 1000, 800, 600, 400, 200, 0, -200];
 
-function moveImages() {
-    for (var i = 0; i < xPositions.length; i++) {
-        if (xPositions[i] < 1800) {
-            xPositions[i] += 1; 
-        } else {
-            xPositions[i] = -200;
-        }
+image1.style.left = '100px';
+image2.style.left = '300px';
+image3.style.left = '500px';
+image4.style.left = '700px';
+image5.style.left = '900px';
+image6.style.left = '100px';
+image7.style.left = '300px';
+image8.style.left = '500px';
+image9.style.left = '700px';
+image10.style.left = '900px';
+
+function hideImages() {
+    if (image10.style.display == "block") {
+        image10.style.display = "none";
+    } else  {
+        image10.style.display = "block"
     }
-
-    image1.style.left = xPositions[0] + 'px';
-    image2.style.left = xPositions[1] + 'px';
-    image3.style.left = xPositions[2] + 'px';
-    image4.style.left = xPositions[3] + 'px';
-    image5.style.left = xPositions[4] + 'px';
-    image6.style.left = xPositions[5] + 'px';
-    image7.style.left = xPositions[6] + 'px';
-    image8.style.left = xPositions[7] + 'px';
-    image9.style.left = xPositions[8] + 'px';
-    image10.style.left = xPositions[9] + 'px';
+    if (image6.style.display == "block") {
+        image6.style.display = "none";
+    } else  {
+        image6.style.display = "block"
+    }
+    if (image7.style.display == "block") {
+        image7.style.display = "none";
+    } else  {
+        image7.style.display = "block"
+    }
+    if (image8.style.display == "block") {
+        image8.style.display = "none";
+    } else  {
+        image8.style.display = "block"
+    }
+    if (image9.style.display == "block") {
+        image9.style.display = "none";
+    } else  {
+        image9.style.display = "block"
+    }
 }
 
-setInterval(moveImages, 10);
+setInterval(hideImages, 1500);
+
 
 $('#planner').click(function() {
     var linkUrl = 'https://github.com/DiaZia/Workout-planner-app';
