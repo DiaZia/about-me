@@ -3,13 +3,8 @@ const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const image4 = document.getElementById('image4');
 const image5 = document.getElementById('image5');
-const image6 = document.getElementById('image6');
-const image7 = document.getElementById('image7');
-const image8 = document.getElementById('image8');
-const image9 = document.getElementById('image9');
-const image10 = document.getElementById('image10');
 
-image1.style.left = '100px';
+/* image1.style.left = '100px';
 image2.style.left = '300px';
 image3.style.left = '500px';
 image4.style.left = '700px';
@@ -18,35 +13,39 @@ image6.style.left = '100px';
 image7.style.left = '300px';
 image8.style.left = '500px';
 image9.style.left = '700px';
-image10.style.left = '900px';
+image10.style.left = '900px'; */
 
 function hideImages() {
-    if (image10.style.display == "block") {
-        image10.style.display = "none";
-    } else  {
-        image10.style.display = "block"
+    if (image1.src.endsWith("30.9.2022.jpg")) {
+        image1.src = "images/2.1.2023.jpg";
+    } else {
+        image1.src = "images/30.9.2022.jpg";
     }
-    if (image6.style.display == "block") {
-        image6.style.display = "none";
-    } else  {
-        image6.style.display = "block"
+    
+    if (image2.src.endsWith("5.10.2022.jpg")) {
+        image2.src = "images/9.3.2023.jpg";
+    } else {
+        image2.src = "images/5.10.2022.jpg";
     }
-    if (image7.style.display == "block") {
-        image7.style.display = "none";
-    } else  {
-        image7.style.display = "block"
+
+    if (image3.src.endsWith("19.10.2022.jpg")) {
+        image3.src = "images/5.4.2023.jpg";
+    } else {
+        image3.src = "images/19.10.2022.jpg";
     }
-    if (image8.style.display == "block") {
-        image8.style.display = "none";
-    } else  {
-        image8.style.display = "block"
+
+    if (image4.src.endsWith("21.10.2022.jpg")) {
+        image4.src = "images/30.4.2023.jpg";
+    } else {
+        image4.src = "images/21.10.2022.jpg";
     }
-    if (image9.style.display == "block") {
-        image9.style.display = "none";
-    } else  {
-        image9.style.display = "block"
+
+    if (image5.src.endsWith("10.12.2022.jpg")) {
+        image5.src = "images/5.5.2023.jpg";
+    } else {
+        image5.src = "images/10.12.2022.jpg";
     }
-}
+} 
 
 setInterval(hideImages, 1500);
 
