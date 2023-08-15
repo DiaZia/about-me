@@ -18,7 +18,7 @@ body {
     color: white;
     background-color: #2d2d2d;
     font-size: 15px;
-    width: 15%;
+    width: 25%;
     height: auto;
     padding: 10px 15px 0 20px;
     white-space: pre;
@@ -26,7 +26,7 @@ body {
 
 #others {
     white-space: pre;
-    width: 85%;
+    width: 75%;
     height: auto;
     background-color: #212121;
 }
