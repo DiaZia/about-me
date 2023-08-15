@@ -47,14 +47,14 @@ main {
 h3 {
     font-size: 18px;
     color: rgb(252, 230, 122);
-    width: 400px;
+    width: auto;
     margin: 20px 0 0 0;
 }
 
 h4 {
     font-size: 17px;
     color: rgb(125, 190, 243);
-    width: 100px;
+    width: auto;
     margin: 0;
     
 }
@@ -77,31 +77,33 @@ h4 {
 }
 
 #myLinks {
-    width: 35%;
+    width: 45%;
     background-color: #262626;
 }
 
 #links {
     color: rgb(125, 190, 243);
     font-size: 15px;
-    margin: 40px 0 10px 40px;
+    margin: 40px 0 10px 7%;
+    width: 100px;
 }
 
 #linkedin {
     width: 50%;
-    margin: 10px 20px 0 50px;
+    margin: 10px 20px 0 7%;
 }
 
 #github {
     width: 50%;
     padding: 10px;
-    margin: 0 20px 0 40px;
+    margin: 0 20px 0 5%;
 }
 
 #download {
     height: 15px;
     color: #96c4e1;
-    margin: 40px 0 10px 50px;
+    margin: 40px 0 30px 5%;
+    width: 100px;
 }
 
 #cv {
@@ -109,7 +111,7 @@ h4 {
     border-radius: 8px;
     border: 1px solid rgb(24, 24, 24);
     background-color: #96c4e1;
-    margin: 10px 0 0 50px;
+    margin: 10px 0 0 5%;
 }
 
 .var {
@@ -132,16 +134,13 @@ h4 {
 
 #projects {
     display: block;
-    margin: 0 0 0 20%;
-    width: 260px;
+    width: auto;
 }
 
 h5 {
     color: rgb(69, 119, 225);
     font-size: 15px;
     width: 85px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
 }
 
@@ -151,6 +150,7 @@ h5 {
     background-color: rgb(125, 190, 243);
     border: 18px solid rgb(125, 190, 243);
     border-radius: 25px;
+    display: block;
 }
 
 
