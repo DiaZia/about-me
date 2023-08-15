@@ -145,7 +145,7 @@ h5 {
 }
 
 .button {
-    width: 260px;
+    width: auto;
     margin: 3px;
     background-color: rgb(125, 190, 243);
     border: 18px solid rgb(125, 190, 243);
