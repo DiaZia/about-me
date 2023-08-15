@@ -41,7 +41,7 @@ $('#planner').click(function() {
 $('#game').click(function() {
     const downloadLink = $('<a></a>');
 
-    downloadLink.attr('href', '/files/balloonTypingGame.zip'); 
+    downloadLink.attr('href', 'files/balloonTypingGame.zip'); 
     downloadLink.attr('download', 'balloonTypingGame.zip'); 
     
     $('body').append(downloadLink);
@@ -68,7 +68,7 @@ $('#github').click(function() {
 $('#cv').click(function() {
     const downloadLink = $('<a></a>');
 
-    downloadLink.attr('href', '/files/cv.docx'); 
+    downloadLink.attr('href', 'files/cv.docx'); 
     downloadLink.attr('download', 'cv.docx'); 
     
     $('body').append(downloadLink);
